@@ -6,16 +6,8 @@ class Node
    public:
    int num;
    Node *next;
-};
-class LinkedList
-{
-   public:
-   Node *head, *tail;
-   LinkedList()
-   {
-      head=NULL;
-      tail=NULL;
-   }
+}*head=NULL,*tail=NULL;
+  
    void AddNode(int n)
    {
       Node *tmp=new Node;
@@ -83,25 +75,43 @@ class LinkedList
       temp1->next=NULL;
       delete temp1;
    } 
-};
+
    
 int main()
 {
     int ch,x;
     char cha;
-    Node *nptr;
+    int pos;
+    Node *nptr; 
     cout<<"\n \nPROGRAM TO USE THE CONCEPT OF LINKED LIST";
     do 
     {
-        cout<<"\n\n1.ADD NODE \n2.INSERT NODE AT ANY POSITION \n3.DISPLAY \n4.EXIT";
-        cout<<"\nEnter your choice(1-4):";
-        cin>>ch;
-        
-        ............................................................
-            
-            default: cout<<"\nWrong choice!!";
-        }
-    cout<<"\n \nDo you want to continue?(y/n)";
+       cout<<"\n1. Add a node \n2. Insert a node at a place \n3. Delete a node \n4.Display ";
+       cout<<"\nPlease enter your choice: ";
+       cin>>ch;
+       switch(ch);
+       case 1:
+              cout<<"\nEnter the data: ";
+              cin>>x;
+              AddNode(x);
+              break;
+       case 2:
+              cout<<"\nEnter the data to be inserted";
+              cin>>x;
+              cout<<"\nEnter the position to insert the node";
+              cin>>pos;
+              Insert(x,pos);
+              break;
+       case 3:
+             
+              break;
+       case 4:
+             
+              break;
+       default:
+              cout<<"\nWrong choice !!!!";
+    }
+    cout<<"Do you want to continue? (y/n)"
     cin>>cha;
     }
     while(cha=='y' || cha=='Y');
