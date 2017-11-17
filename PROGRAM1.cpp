@@ -84,3 +84,27 @@ class LinkedList
       delete temp1;
    } 
 };
+   
+int main()
+{
+    int ch,x;
+    char cha;
+    Node *nptr;
+    cout<<"\n \nPROGRAM TO USE THE CONCEPT OF LINKED LIST";
+    do 
+    {
+        cout<<"\n\n1.ADD NODE \n2.INSERT NODE AT ANY POSITION \n3.DISPLAY \n4.EXIT";
+        cout<<"\nEnter your choice(1-4):";
+        cin>>ch;
+        
+        ............................................................
+            
+            default: cout<<"\nWrong choice!!";
+        }
+    cout<<"\n \nDo you want to continue?(y/n)";
+    cin>>cha;
+    }
+    while(cha=='y' || cha=='Y');
+    return 0;
+}
+
